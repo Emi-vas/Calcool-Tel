@@ -146,7 +146,8 @@ window.onload = function() {
                 window.setTimeout(reset, 700)
             } else {
                 redLight()
-                window.navigator.vibrate(20);
+                rep = ""
+                print()
             }
         })
 
