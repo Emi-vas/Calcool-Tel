@@ -9,6 +9,10 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+main p {
+    margin: 0;
+}
 .bleu {
     height: 100vh;
     background: linear-gradient(to right, rgb(22, 189, 255), rgb(129, 219, 255));  
@@ -31,8 +35,57 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    margin: 30px 0;
 }
 
+.form--2 {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 5px / 5px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 300px;
+    padding: 10px;
+
+
+}
+
+.affichage {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+
+.touche {
+    width: 80px;
+    background: linear-gradient(to right, rgba(190, 0, 165, 0.9), rgb(146, 0, 160, 0.8) );
+    color: white;
+
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 15px 15px;
+}
+
+.touche--clear {
+    font-size: 1.5em;
+    padding: 20px 0;
+    width: 90%;
+}
+
+.touche--valider {
+    font-size: 2em;
+    width: 90%;
+    padding: 30px 0;
+    background: linear-gradient(to right, rgba(0, 190, 0, 0.9), rgba(0, 195, 10, 0.8) );
+}
 button {
     border : none;
     font-size: 0.3em;
@@ -52,57 +105,4 @@ button:hover {
 button:active {
     background: linear-gradient(to right, rgb(131, 37, 253), rgb(255, 100, 183));
     box-shadow: none;
-}
-
-.tempo {
-    margin: 30px;
-    width: 30%;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.787);
-    border-radius: 15px 15px;
-
-    position: relative;
-    overflow: hidden;
-}
-
-.barre {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 15px 15px;
-    background: rgb(190, 0, 89);
-
-    
-    transform: translateX(-500px);
-    
-
-    opacity: 0;
-}
-
-.anim {
-    animation: tempo linear 5s ;
-}
-
-@keyframes tempo {
-    0% {
-        transform: translateX(-700px);
-        opacity: 1;
-        background: limegreen;
-    }
-
-    70% {
-        background: limegreen;
-    }
-
-    80% {
-        background: rgb(226, 4, 4);
-    }
-
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-        background: rgb(226, 4, 4);
-    }
 }
