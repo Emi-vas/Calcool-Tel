@@ -16,8 +16,7 @@ main p {
     margin: 0;
 }
 .bleu {
-    padding-top: 10px;
-    padding-bottom: 80px;
+
     background: linear-gradient(to right, rgb(22, 189, 255), rgb(129, 219, 255));  
 }
 
