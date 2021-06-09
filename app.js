@@ -146,7 +146,7 @@ window.onload = function() {
                 window.setTimeout(reset, 700)
             } else {
                 redLight()
-                rep = ""
+                rep = " "
                 print()
             }
         })

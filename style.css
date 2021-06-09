@@ -9,13 +9,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-height: 100vh;
 }
 
 main p {
     margin: 0;
 }
 .bleu {
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 80px;
     background: linear-gradient(to right, rgb(22, 189, 255), rgb(129, 219, 255));  
 }
@@ -31,7 +32,7 @@ main p {
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     border-radius: 5px / 5px;
     padding: 15px;
-    font-size: 4em;
+    font-size: 3em;
 
     display: flex;
     flex-direction: column;
@@ -50,7 +51,7 @@ main p {
     align-items: center;
     flex-wrap: wrap;
 
-    width: 280px;
+    width: 250px;
     padding: 10px;
 
 
@@ -59,18 +60,19 @@ main p {
 .affichage {
     width: 100%;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 20px;
+    min-height: 30px ;
     
 }
 
 
 .touche {
-    width: 77px;
+    width: 70px;
     background: linear-gradient(to right, rgba(190, 0, 165, 0.9), rgb(146, 0, 160, 0.8) );
     color: white;
 
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 10px;
     border-radius: 15px 15px;
