@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bleu {
+    height: 100vh;
+    background: linear-gradient(to right, rgb(22, 189, 255), rgb(129, 219, 255));  
+}
+
+.vert {
+    background: linear-gradient(to right, rgb(22, 241, 77), rgb(129, 255, 167));
+}
+.rouge {
+    background: linear-gradient(to right, rgb(255, 62, 62), rgb(255, 126, 126));
+}
+
+.form {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 5px / 5px;
+    padding: 50px;
+    font-size: 4em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    border : none;
+    font-size: 0.3em;
+    margin: 20px;
+    padding: 5px 15px;
+    border-radius: 5px 5px;
+    background: linear-gradient(to right, rgb(131, 37, 253), rgb(255, 100, 183));
+    color: white;
+
+    box-shadow: grey 1px 5px 5px;
+}
+
+button:hover {
+    background: linear-gradient(to right, rgb(156, 80, 255), rgb(255, 141, 202));
+}
+
+button:active {
+    background: linear-gradient(to right, rgb(131, 37, 253), rgb(255, 100, 183));
+    box-shadow: none;
+}
+
+.tempo {
+    margin: 30px;
+    width: 30%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.787);
+    border-radius: 15px 15px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.barre {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px 15px;
+    background: rgb(190, 0, 89);
+
+    
+    transform: translateX(-500px);
+    
+
+    opacity: 0;
+}
+
+.anim {
+    animation: tempo linear 5s ;
+}
+
+@keyframes tempo {
+    0% {
+        transform: translateX(-700px);
+        opacity: 1;
+        background: limegreen;
+    }
+
+    70% {
+        background: limegreen;
+    }
+
+    80% {
+        background: rgb(226, 4, 4);
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+        background: rgb(226, 4, 4);
+    }
+}
