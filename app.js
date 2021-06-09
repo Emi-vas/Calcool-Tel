@@ -69,6 +69,7 @@ window.onload = function() {
     document
         .getElementById("touche1")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "1"
             print()
 
@@ -77,60 +78,70 @@ window.onload = function() {
     document
         .getElementById("touche2")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "2"
             print()
         })
     document
         .getElementById("touche3")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "3"
             print()
         })
     document
         .getElementById("touche4")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "4"
             print()
         })
     document
         .getElementById("touche5")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "5"
             print()
         })
     document
         .getElementById("touche6")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "6"
             print()
         })
     document
         .getElementById("touche7")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "7"
             print()
         })
     document
         .getElementById("touche8")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "8"
             print()
         })
     document
         .getElementById("touche9")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "9"
             print()
         })
     document
         .getElementById("touche0")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = rep + "0"
             print()
         })
     document
         .getElementById("clear")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             rep = ""
             print()
         })
@@ -140,11 +151,13 @@ window.onload = function() {
     document
         .getElementById("toucheV")
         .addEventListener("click", function() {
+            window.navigator.vibrate(20);
             
             if (rep == nb1 * nb2) {
                 greenLight()
                 window.setTimeout(reset, 700)
             } else {
+                window.navigator.vibrate(200);
                 redLight()
                 rep = " "
                 print()
